@@ -1,0 +1,21 @@
+application:
+  subdomain: bentopdf
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://bentopdf:8080/
+
+services:
+  bentopdf:
+    # upstream: ghcr.io/alam00000/bentopdf-simple:2.8.8
+    image: ghcr.nju.edu.cn/alam00000/bentopdf-simple:2.8.8
+    environment:
+      - "DISABLE_IPV6={{ .U.disable_ipv6 }}"
+
+usage: |
+  BentoPDF 在浏览器中提供 PDF 合并、拆分、压缩、转换、编辑等工具。
+  Self-Hosted Simple 镜像优先在本地浏览器中处理文档，不需要额外账号。
+
+  BentoPDF provides browser-based tools for merging, splitting, compressing,
+  converting, and editing PDF documents without requiring an account.

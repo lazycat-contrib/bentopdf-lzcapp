@@ -1,0 +1,13 @@
+params:
+  - id: disable_ipv6
+    type: bool
+    name: "Disable IPv6"
+    description: "Disable the container's IPv6 listener for IPv4-only environments"
+    default_value: "false"
+    optional: true
+
+locales:
+  zh:
+    disable_ipv6:
+      name: "禁用 IPv6"
+      description: "仅 IPv4 的网络环境可启用此项，以关闭容器的 IPv6 监听"

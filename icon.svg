@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">BentoPDF App Icon</title>
+  <desc id="desc">Three rotated tiles on a dark background.</desc>
+  <rect width="512" height="512" fill="#252D3C"/>
+  <g transform="translate(113 0) scale(2.59)">
+    <path d="M56.7848 80.9116L0 25.6211L24.8434 1.43151C26.8037 -0.47717 29.9814 -0.47717 31.9414 1.43151L85.177 53.2662L56.7848 80.9116Z" fill="#A5B4FC"/>
+    <path d="M0 80.7335L21.2939 101.467L42.5878 80.7335L21.2939 60L0 80.7335Z" fill="#E0E7FF"/>
+    <path d="M56.7848 83L81.6279 107.19C83.5881 109.098 83.5881 112.192 81.6279 114.101L28.3925 165.936L0 138.29L56.7848 83Z" fill="#6366F1"/>
+  </g>
+</svg>

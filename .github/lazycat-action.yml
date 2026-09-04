@@ -1,0 +1,39 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: dist/bentopdf.lpk
+  target_arch: amd64
+
+update:
+  strategy: publish
+  allow_downgrade: false
+  version_source:
+    type: image
+    image: bentopdf
+
+build:
+  run_buildscript: false
+
+images:
+  - id: bentopdf
+    target: service
+    service: bentopdf
+    source: ghcr.io/alam00000/bentopdf-simple
+    channel: stable
+    sort: semver
+    tag_regex: '^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$'
+    delivery:
+      mode: mirror
+      require_digest_match: true
+
+stores:
+  official:
+    enabled: false
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: BentoPDF
+    summary: "The Privacy First PDF Toolkit"
