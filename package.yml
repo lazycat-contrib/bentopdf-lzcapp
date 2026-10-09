@@ -4,13 +4,11 @@ name: BentoPDF
 description: "The Privacy First PDF Toolkit"
 min_os_version: 1.5.0
 author: alam00000
-license: AGPL-3.0-only
+license: AGPL-3.0
 homepage: https://github.com/alam00000/bentopdf
-
 permissions:
   required:
     - net.internet
-
 locales:
   zh:
     name: "BentoPDF"
