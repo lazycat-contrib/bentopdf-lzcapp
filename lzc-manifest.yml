@@ -7,8 +7,8 @@ application:
       backend: http://bentopdf:8080/
 services:
   bentopdf:
-    # upstream: ghcr.io/alam00000/bentopdf-simple:2.8.10
-    image: ghcr.nju.edu.cn/alam00000/bentopdf-simple:2.8.10
+    # upstream: ghcr.io/alam00000/bentopdf-simple:2.8.11
+    image: ghcr.nju.edu.cn/alam00000/bentopdf-simple:2.8.11
     environment:
       - "DISABLE_IPV6={{ .U.disable_ipv6 }}"
 usage: |
