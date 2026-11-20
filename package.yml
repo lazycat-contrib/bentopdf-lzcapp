@@ -1,5 +1,5 @@
 package: community.lazycat.app.bentopdf
-version: 2.8.11
+version: 2.8.12
 name: BentoPDF
 description: "The Privacy First PDF Toolkit"
 min_os_version: 1.5.0
